@@ -2,5 +2,10 @@
 
 import os
 
-command = 'streamlink https://www.twitch.tv/shinmiri2 best'
-os.system(command)
+streams = ['shinmiri2']
+twitch_link = 'https://www.twitch.tv/'
+
+if __name__ == '__main__':
+    command = 'streamlink ' + twitch_link + streams[0] + ' best'
+    os.system(command)
+
